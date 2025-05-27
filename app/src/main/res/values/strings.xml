@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Password Manager</string>
+
+    <!-- Main Activity -->
+    <string name="search_passwords">Search passwords…</string>
+    <string name="no_passwords_found">No passwords found</string>
+    <string name="passwords_count">%d passwords stored</string>
+    <string name="password_count_single">1 password stored</string>
+    <string name="password_count_zero">0 passwords stored</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_add">Add</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Empty State -->
+    <string name="empty_state_title">No passwords saved yet</string>
+    <string name="empty_state_message">Tap the + button to add your first password</string>
+
+    <!-- Add/Edit Password Activity -->
+    <string name="add_password">Add Password</string>
+    <string name="edit_password">Edit Password</string>
+    <string name="title_hint">Title</string>
+    <string name="username_hint">Username/Email</string>
+    <string name="password_hint">Password</string>
+    <string name="website_hint">Website</string>
+    <string name="notes_hint">Notes (Optional)</string>
+    <string name="save_password">Save Password</string>
+    <string name="update_password">Update Password</string>
+    <string name="generate_password">Generate Strong Password</string>
+
+    <!-- Login Activity -->
+    <string name="enter_pin">Enter PIN</string>
+    <string name="unlock">Unlock</string>
+    <string name="use_fingerprint">Use Fingerprint</string>
+    <string name="use_face_unlock">Use Face Unlock</string>
+    <string name="setup_pin">First time? Set up your PIN</string>
+    <string name="secure_digital_life">Secure your digital life</string>
+
+    <!-- Authentication Messages -->
+    <string name="login_successful">Login successful!</string>
+    <string name="login_failed">Login failed. %d attempts remaining.</string>
+    <string name="app_locked">Too many failed attempts. App locked for 5 minutes.</string>
+    <string name="invalid_pin">Invalid PIN. Please try again.</string>
+    <string name="biometric_prompt_title">Authenticate</string>
+    <string name="biometric_prompt_subtitle">Use your fingerprint to unlock the app</string>
+    <string name="biometric_prompt_description">Place your finger on the fingerprint sensor</string>
+    <string name="biometric_prompt_negative">Use PIN</string>
+
+    <!-- Actions -->
+    <string name="copy_password">Copy password</string>
+    <string name="edit_password_action">Edit password</string>
+    <string name="delete_password_action">Delete password</string>
+    <string name="password_copied">Password copied to clipboard</string>
+    <string name="username_copied">Username copied to clipboard</string>
+
+    <!-- Dialog Messages -->
+    <string name="delete_password_title">Delete Password</string>
+    <string name="delete_password_message">Are you sure you want to delete this password? This action cannot be undone.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Validation Messages -->
+    <string name="error_empty_title">Please enter a title</string>
+    <string name="error_empty_username">Please enter a username or email</string>
+    <string name="error_empty_password">Please enter a password</string>
+    <string name="error_password_too_short">Password must be at least 4 characters</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+
+    <!-- Menu Items -->
+    <string name="menu_search">Search</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_backup">Backup</string>
+    <string name="menu_export">Export</string>
+    <string name="menu_about">About</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="security_settings">Security Settings</string>
+    <string name="auto_lock">Auto Lock</string>
+    <string name="auto_lock_summary">Lock app when screen turns off</string>
+    <string name="biometric_auth">Biometric Authentication</string>
+    <string name="biometric_auth_summary">Use fingerprint or face unlock</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="change_pin_summary">Change your security PIN</string>
+
+    <!-- Backup & Export -->
+    <string name="backup_title">Backup &amp; Export</string>
+    <string name="export_passwords">Export Passwords</string>
+    <string name="export_success">Passwords exported successfully</string>
+    <string name="export_failed">Failed to export passwords</string>
+
+    <!-- Password Generator -->
+    <string name="password_generator_title">Password Generator</string>
+    <string name="password_length">Password Length</string>
+    <string name="include_uppercase">Include Uppercase Letters</string>
+    <string name="include_lowercase">Include Lowercase Letters</string>
+    <string name="include_numbers">Include Numbers</string>
+    <string name="include_symbols">Include Symbols</string>
+    <string name="generate">Generate</string>
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_fair">Fair</string>
+    <string name="password_strength_good">Good</string>
+    <string name="password_strength_strong">Strong</string>
+
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="app_version">Version 1.0.0</string>
+    <string name="about_description">A secure password manager to keep all your passwords safe and organized.</string>
+
+    <!-- Content Descriptions -->
+    <string name="cd_app_logo">App logo</string>
+    <string name="cd_search_icon">Search icon</string>
+    <string name="cd_copy_password">Copy password</string>
+    <string name="cd_edit_password">Edit password</string>
+    <string name="cd_delete_password">Delete password</string>
+    <string name="cd_add_password">Add new password</string>
+    <string name="cd_username_icon">Username icon</string>
+    <string name="cd_website_icon">Website icon</string>
+    <string name="cd_lock_icon">Lock icon</string>
+
+    <!-- Date Format -->
+    <string name="date_format">dd/MM/yyyy HH:mm</string>
+    <string name="updated_format">Updated: %s</string>
+    <string name="created_format">Created: %s</string>
+    <string name="title">Title</string>
+    <string name="username_email">Username/Email</string>
+    <string name="password">Password</string>
+    <string name="generate_strong_password">Generate Strong Password</string>
+    <string name="website">Website</string>
+    <string name="notes_optional">Notes (Optional)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tambah_akun">Tambah Akun</string>
+    <string name="username">Username</string>
+    <string name="simpan">Simpan</string>
+    <string name="password123">Password123</string>
+    <string name="www_example_com">www.example.com</string>
+    <string name="website_icon">website icon</string>
+    <string name="username_example_com">username@example.com</string>
+    <string name="username_icon">username icon</string>
+    <string name="delete_password">delete password</string>
+    <string name="account_title">Account Title</string>
+    <string name="password_manager_logo">Password Manager Logo</string>
+    <string name="password_manager">Password Manager</string>
+    <string name="amankan_password_anda">Amankan password Anda</string>
+    <string name="buat_pin_keamanan">Buat PIN Keamanan</string>
+    <string name="masukkan_pin_min_4_digit">Masukkan PIN (min. 4 digit)</string>
+    <string name="konfirmasi_pin">Konfirmasi PIN</string>
+    <string name="buat_pin">Buat PIN</string>
+    <string name="fingerprint">Fingerprint</string>
+    <string name="gunakan_biometrik">Gunakan Biometrik</string>
+    <string name="biometrik_tersedia">Biometrik tersedia</string>
+    <string name="atau_masukkan_pin">Atau masukkan PIN</string>
+    <string name="masukkan_pin">Masukkan PIN</string>
+    <string name="masuk">Masuk</string>
+    <string name="data_anda_diamankan_dengan_enkripsi_tingkat_militer">Data Anda diamankan dengan enkripsi tingkat militer</string>
+    <string name="protection">Protection</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="logout">Logout</string>
+    <string name="pin_baru_min_4_digit">PIN Baru (min. 4 digit)</string>
+    <string name="konfirmasi_pin_baru">Konfirmasi PIN Baru</string>
+    <string name="pin_lama">PIN Lama</string>
+    <string name="toggle_password_visibility">Toggle password visibility</string>
+    <string name="batal">Batal</string>
+    <string name="website_opsional">Website (opsional)</string>
+    <string name="judul_contoh_facebook_gmail">Judul (contoh: Facebook, Gmail)</string>
+    <string name="tambah_akun_baru">Tambah Akun Baru</string>
+</resources>
