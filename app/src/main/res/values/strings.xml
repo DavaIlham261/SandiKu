@@ -156,7 +156,7 @@
     <string name="fingerprint">Fingerprint</string>
     <string name="gunakan_biometrik">Gunakan Biometrik</string>
     <string name="biometrik_tersedia">Biometrik tersedia</string>
-    <string name="atau_masukkan_pin">Atau masukkan PIN</string>
+    <string name="atau_masukkan_pin">atau masuk dengan PIN</string>
     <string name="masukkan_pin">Masukkan PIN</string>
     <string name="masuk">Masuk</string>
     <string name="data_anda_diamankan_dengan_enkripsi_tingkat_militer">Data Anda diamankan dengan enkripsi tingkat militer</string>
@@ -168,7 +168,7 @@
     <string name="pin_lama">PIN Lama</string>
     <string name="toggle_password_visibility">Toggle password visibility</string>
     <string name="batal">Batal</string>
-    <string name="website_opsional">Website (opsional)</string>
+    <string name="website_opsional">Alamat URL</string>
     <string name="judul_contoh_facebook_gmail">Judul (contoh: Facebook, Gmail)</string>
-    <string name="tambah_akun_baru">Tambah Akun Baru</string>
+    <string name="tambah_akun_baru">Akun</string>
 </resources>

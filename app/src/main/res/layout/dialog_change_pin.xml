@@ -1,65 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="24dp">
+    app:cardCornerRadius="18dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="16dp">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/old_pin_layout"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:passwordToggleEnabled="true"
-        app:boxStrokeColor="@color/primary"
-        app:hintTextColor="@color/primary">
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/old_pin_edit_text"
-            android:layout_width="wrap_content"
+        <!-- PIN Lama -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/old_pin_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minWidth="480dp"
-            android:hint="@string/pin_lama"
-            android:inputType="numberPassword"
-            android:maxLength="6" />
-    </com.google.android.material.textfield.TextInputLayout>
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeColor="@color/primary"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            android:layout_marginBottom="14dp"
+            app:hintTextColor="@color/primary">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/new_pin_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:passwordToggleEnabled="true"
-        app:boxStrokeColor="@color/primary"
-        app:hintTextColor="@color/primary">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/old_pin_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pin_lama"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/new_pin_edit_text"
-            android:layout_width="wrap_content"
+        <!-- PIN Baru -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/new_pin_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minWidth="480dp"
-            android:hint="@string/pin_baru_min_4_digit"
-            android:inputType="numberPassword"
-            android:maxLength="6" />
-    </com.google.android.material.textfield.TextInputLayout>
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeColor="@color/primary"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            android:layout_marginBottom="14dp"
+            app:hintTextColor="@color/primary">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/confirm_new_pin_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:passwordToggleEnabled="true"
-        app:boxStrokeColor="@color/primary"
-        app:hintTextColor="@color/primary">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/new_pin_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pin_baru_min_4_digit"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/confirm_new_pin_edit_text"
-            android:layout_width="wrap_content"
+        <!-- Konfirmasi PIN Baru -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirm_new_pin_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minWidth="480dp"
-            android:hint="@string/konfirmasi_pin_baru"
-            android:inputType="numberPassword"
-            android:maxLength="6" />
-    </com.google.android.material.textfield.TextInputLayout>
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeColor="@color/primary"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            android:layout_marginBottom="8dp"
+            app:hintTextColor="@color/primary">
 
-</LinearLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirm_new_pin_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/konfirmasi_pin_baru"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Tombol, jika ingin tambahkan di sini atau atur lewat kode -->
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

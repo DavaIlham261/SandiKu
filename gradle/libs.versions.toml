@@ -1,6 +1,6 @@
 [versions]
 activityVersion = "1.8.1"
-agp = "8.8.1"
+agp = "8.10.1"
 androidxJunit = "1.1.5"
 androidxRoomRuntime = "2.5.0"
 appcompatVersion = "1.6.1"

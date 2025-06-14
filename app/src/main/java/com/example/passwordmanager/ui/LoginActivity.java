@@ -147,7 +147,7 @@ public class LoginActivity extends AppCompatActivity implements BiometricHelper.
         loginContainer.setVisibility(View.GONE);
 
         titleText.setText("Setup Password Manager");
-        subtitleText.setText("Buat PIN 4 digit untuk megalomania aplikasi Anda");
+        subtitleText.setText("Buat PIN 4 digit untuk masuk ke aplikasi");
 
         setupPinInput.setText("");
         confirmPinInput.setText("");

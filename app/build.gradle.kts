@@ -40,6 +40,8 @@ android {
 dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
+    implementation("com.google.android.material:material:1.11.0")
+
 
     // Navigation Component
     implementation(libs.navigation.fragment.v275)
