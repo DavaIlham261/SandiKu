@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:padding="5dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="4dp"
-    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:strokeColor="@color/card_stroke"
+    app:strokeWidth="1dp"
+    app:cardBackgroundColor="@color/white"
+    android:foreground="?attr/selectableItemBackground"
     android:clickable="true"
     android:focusable="true">
 
@@ -16,8 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
-
+        android:padding="18dp">
 
         <!-- Title and Action Buttons Row -->
         <LinearLayout
@@ -34,7 +36,7 @@
                 android:text="@string/account_title"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="?android:attr/textColorPrimary"
+                android:textColor="@color/primary_dark"
                 android:maxLines="1"
                 android:ellipsize="end" />
 
@@ -43,25 +45,23 @@
                 android:id="@+id/button_copy"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginEnd="4dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/copy_password"
                 android:padding="8dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_copy"
-                tools:ignore="TouchTargetSizeCheck" />
+                app:tint="@color/text_secondary" />
 
             <ImageButton
                 android:id="@+id/button_edit"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginEnd="4dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/edit_password"
                 android:padding="8dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_edit"
-                tools:ignore="TouchTargetSizeCheck" />
+                app:tint="@color/text_secondary" />
 
             <ImageButton
                 android:id="@+id/button_delete"
@@ -72,7 +72,7 @@
                 android:padding="8dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_delete"
-                tools:ignore="TouchTargetSizeCheck" />
+                app:tint="@color/danger_color" />
 
         </LinearLayout>
 
@@ -81,16 +81,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="8dp"
-            android:gravity="center_vertical"
-            tools:ignore="UseCompoundDrawables">
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
                 android:src="@drawable/ic_person"
                 android:layout_marginEnd="8dp"
-                android:contentDescription="@string/username_icon" />
+                android:contentDescription="@string/username_icon"
+                app:tint="@color/text_secondary" />
 
             <TextView
                 android:id="@+id/text_username"
@@ -98,11 +98,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/username_example_com"
                 android:textSize="14sp"
-                android:textColor="?android:attr/textColorPrimary"
+                android:textColor="@color/text_secondary"
                 android:maxLines="1"
-
                 android:ellipsize="end" />
-
         </LinearLayout>
 
         <!-- Website Row -->
@@ -110,16 +108,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="4dp"
-            android:gravity="center_vertical"
-            tools:ignore="UseCompoundDrawables">
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
                 android:src="@drawable/ic_web"
                 android:layout_marginEnd="8dp"
-                android:contentDescription="@string/website_icon" />
+                android:contentDescription="@string/website_icon"
+                app:tint="@color/text_secondary" />
 
             <TextView
                 android:id="@+id/text_website"
@@ -127,17 +125,16 @@
                 android:layout_height="wrap_content"
                 android:text="@string/www_example_com"
                 android:textSize="14sp"
-                android:textColor="?android:attr/textColorPrimary"
+                android:textColor="@color/text_secondary"
                 android:maxLines="1"
                 android:ellipsize="end" />
-
         </LinearLayout>
 
         <!-- Password -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
@@ -147,10 +144,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/password123"
-                android:textColor="?android:attr/textColorPrimary"
+                android:textColor="@color/text_primary"
                 android:textSize="14sp"
                 android:textAlignment="textEnd"
                 android:fontFamily="monospace" />
+
             <ImageButton
                 android:id="@+id/btn_toggle_password_visibility"
                 android:layout_width="40dp"
@@ -164,5 +162,4 @@
         </LinearLayout>
 
     </LinearLayout>
-
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

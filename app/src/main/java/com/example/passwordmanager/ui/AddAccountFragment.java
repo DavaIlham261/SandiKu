@@ -67,6 +67,8 @@ public class AddAccountFragment extends Fragment {
         inputUsername = view.findViewById(R.id.input_username);
         inputPassword = view.findViewById(R.id.input_password);
         Button saveButton = view.findViewById(R.id.btn_save);
+        Button cancelButton = view.findViewById(R.id.btn_cancel);
+
 
         // Load data untuk edit mode
         loadArgumentsData();
@@ -86,6 +88,13 @@ public class AddAccountFragment extends Fragment {
                 showToastOnUiThread("Semua Kolom harus diisi");
             }
         });
+        cancelButton.setOnClickListener(v -> {
+            // Kembali ke halaman utama
+            if (getActivity() != null && !getActivity().isFinishing()) {
+                getActivity().getSupportFragmentManager().popBackStack();
+            }
+        });
+
 
         return view;
     }
